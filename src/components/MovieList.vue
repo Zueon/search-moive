@@ -3,7 +3,8 @@
     <div
       :class="{'no-result': !movies.length}"
       class="inner">
-      <Loader />
+      <Loader 
+        v-if="loading" />
       <div 
         v-if="message"
         class="message">
