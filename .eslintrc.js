@@ -3,12 +3,14 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    jest: true,
   },
   // 사용 가능한 규칙 세트
   extends: [
+    // 순서 뒤에서부터 앞으로 덮어쓰기
     'eslint:recommended',
     'plugin:prettier-vue/recommended',
-    'plugin:vue/vue3-strongly-recommended', // Lv2
+    'plugin:vue/vue3-strongly-recommended',
   ],
   settings: {
     'prettier-vue': {
